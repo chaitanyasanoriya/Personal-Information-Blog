@@ -1,0 +1,493 @@
+body
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+.circular_image
+{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+header
+{
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+    background-color: #f3f4f8;;
+}
+header nav
+{
+    text-align: left;
+}
+
+.name
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+.desc
+{
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+
+
+.menu_button
+{
+    background-color: transparent;
+    border: none;
+    padding: 4%;
+}
+
+
+.menu_button > img
+{
+    width: 1.5em; 
+}
+
+.hyperlinks
+{
+    display: none;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.hyperlinks ul
+{
+    padding: 0;
+}
+
+.hyperlinks li
+{
+    list-style-type: none;
+    margin-top: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hyperlinks li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+footer
+{
+    font-size: 0.6em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer>a
+{
+    color: white;
+}
+
+main
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    height: 100%;
+}
+
+.big
+{
+    font-size: 2.25em;
+    max-width: 3em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.small
+{
+    margin: 0;
+}
+
+.text > a
+{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1em;
+    padding-right:1em;
+    text-decoration: none;
+    color: black;
+    border: 0.08em solid black;
+    border-radius: 0.25em;
+}
+
+main>img
+{
+    float: right;
+    width: 75%;
+    height: 75%;
+}
+
+.title
+{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+dt
+{
+    font-weight: bold;
+}
+
+dd
+{
+    text-align: justify;
+}
+
+.desktop
+{
+    display: none;
+}
+
+.iframe
+{
+    display: block;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0em 0.5em 0.5em 0.5em grey;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding-bottom: 1em;
+}
+
+.card > img
+{
+    width: 100%;
+}
+
+.card dt
+{
+    font-size: 2em;
+}
+
+.card dd
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+html, body
+{
+    overflow: auto;
+}
+
+.main_container
+{
+    margin-top: 2em;
+}
+
+.jmoon_image
+{
+    float: right;
+}
+
+.experience
+{
+    margin-right: 14em;
+}
+
+.social p, .contact p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.25em;
+    margin: 0;
+}
+
+.social  a, .contact
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+
+.contact input, .contact textarea
+{
+    margin-top: 1em;
+    width: 100%;
+    height: 1.5em;
+}
+
+.contact textarea
+{
+    height: 16em;
+}
+
+.contact button
+{
+    width: 40%;
+    margin-left: 30%;
+    font-size: 1.25em;
+    height: 2em;
+}
+
+.social a:hover
+{
+    color: blue;
+}
+
+@media (orientation: landscape) {
+
+    body
+    {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0;
+    }
+
+    #outer_container
+    {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    #container
+    {
+        display: table-row;
+        height: 100%;
+    }
+
+    header
+    {
+        width: 20%;
+        display: table-cell;
+    }
+    
+    header img
+    {
+        max-width: 14em;
+        max-height: 14em;
+    }
+
+    .hyperlinks
+    {
+        margin-top: 10%;
+        display: block;
+    }
+
+    .mobile
+    {
+        display: none;
+    }
+
+    main
+    {
+        font-family: 'Times New Roman', Times, serif;
+        height: 100%;
+        display: table-cell;
+        width: 80%;
+        padding: 4%;
+        vertical-align: top;
+    }
+
+    footer
+    {
+        font-size: 1em;
+        position: relative;
+        background-color: transparent;
+        color: black;
+        margin-top: 5%;
+    }
+
+    footer>a
+    {
+        color: black;
+    }
+
+
+    .big
+    {
+        max-width: 60%;
+        font-size: 8em;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    
+    .small
+    {
+        margin-top: 2%;
+        font-size: 1.5em;
+    }
+
+    main > img
+    {
+        position: fixed;
+        width: 50%;
+        height: 50%;
+        bottom: 1em;
+        right: 1em;
+        /* float: right; */
+    }
+
+    .skills_image_left
+    {
+        float: left;
+        width: 18em;
+        height: 18em;
+        padding: 2em;
+    }
+
+    .desktop
+    {
+        display: block;
+    }
+
+    .title
+    {
+        font-size: 2em;
+    }
+
+    table
+    {
+        margin:0;
+    }
+
+    td
+    {
+        width: 50%;
+    }
+
+    .school
+    {
+        float: left;
+        padding-top: 1em;
+    }
+    
+    .grad
+    {
+        float: left;
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+
+    .college
+    {
+        position: absolute; 
+        top: 0;
+        right: 0;
+        text-align: right;
+        padding-right: 1em;
+        padding-top: 0.5em;
+    }
+
+    .college p
+    {
+        max-width: 100%;
+    }
+
+    .college > .section_title
+    {
+        font-size: 4em;
+    }
+
+    .college > .section_sub
+    {
+        font-size: 2.25em;
+    }
+
+    .section_title
+    {
+        padding-left: 0.5em;
+        font-size: 5em;
+        font-weight: bold;
+        max-width: 12em;
+        margin: 0;
+    }
+
+    .section_sub
+    {
+        margin: 0;
+        padding-left: 1em;
+        font-size: 3em;
+        max-width: 20em;
+        clear: left;
+    }
+
+    .iframe
+    {
+        display: block;
+        border: none;
+        height: 100vh;
+        width: 80vw;
+    }
+
+    .experience dt
+    {
+        font-size: 5em;
+    }
+
+    .experience dd
+    {
+        font-size: 2em;
+    }
+
+    .main_container
+    {
+        margin-top: 2em;
+    }
+
+    .experience
+    {
+        margin-top: 10em;
+    }
+
+    .jmoon_image
+    {
+        margin: auto;
+        width: 20%;
+        float: none;
+        display: block;
+    }
+
+    .social
+    {
+        float: left;
+        width: 20%;
+        display: inline-block;
+    }
+
+    .contact
+    {
+        display: inline-block;
+        width: 80%;
+    }
+  }

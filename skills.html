@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Homepage
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="outer_container">
+            <div id="container">
+                <header>
+                    <img class="circular_image" src="images/circular_image.jpg"/>
+                    <p class="name">Chaitanya Sanoriya</p>
+                    <p class="desc">Aspirant Mobile Application Developer</p>
+                
+                    <nav>
+                        <div class="mobile">
+                            <button class="menu_button" onclick="toggleHyperlinks()"><img  src="images/menu.png"/></button>
+                        </div>
+                        <div class="hyperlinks" id="hyperlinks">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="skills.html">SKILLS</a></li>
+                                <li><a href="education.html">EDUCATION</a></li>
+                                <li><a href="experience.html">EXPERIENCE</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <footer>
+                        &copy; Copyright 2020. All Rights Reserved. <br/> <a href = "mailto:chaitanya.sanoriya@gmail.com">chaitanya.sanoriya@gamil.com</a>
+                    </footer>
+                </header>
+                <main>
+                    <div class="mobile">
+                        <p class="title">Expertise</p>
+                        <dl>
+                            <dt>Android</dt>
+                            <dd>I have been developing Android application since 2016 and have acquired good skills in it.</dd>
+                            <br/>
+                            <dt>Java</dt>
+                            <dd>Java is my favourite language to develop in, which leads me to be very proficient in the language.</dd>
+                            <br/>
+                            <dt>Quick Learner</dt>
+                            <dd>In every project I adjust and perform to the best of my abilities. I am able to quickly adjust to new situations and learn new skills.</dd>
+                            <br/>
+                            <dt>Professionaly Driven</dt>
+                            <dd>Technology and development has been my only interest my whole life, therefore I am very driven and always excited to work on any project.</dd>
+                        </dl>
+                    </div>
+                    <div class="desktop">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/android.png" class="skills_image_left"/>
+                                    <p class="title">Android</p>
+                                    <p>I have been developing Android application since 2016 and have acquired good skills in it.</p>
+                                </td>
+                                <td>
+                                    <img src="images/java.png" class="skills_image_left"/>
+                                    <p class="title">Java</p>
+                                    <p>Java is my favourite language to develop in, which leads me to be very proficient in the language.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/quick_learner.png" class="skills_image_left"/>
+                                    <p class="title">Quick Learner</p>
+                                    <p>In every project I adjust and perform to the best of my abilities. I am able to quickly adjust to new situations and learn new skills.</p>
+                                </td>
+                                <td>
+                                    <img src="images/drive.png" class="skills_image_left"/>
+                                    <p class="title">Professionaly Driven</p>
+                                    <p>Technology and development has been my only interest my whole life, therefore I am very driven and always excited to work on any project.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--<div class="top">
+                            <span class="inner_left">
+                                <img src="images/android.png" class="skills_image_left"/>
+                                <p class="title">
+                                    Android
+                                </p>
+                                <p>I have been developing Android application since 2016 and have acquired good skills in it.</p>
+                            </span>
+                            <span class="inner_right">
+                                <img src="images/java.png" class="skills_image_left"/>
+                                <p class="title">
+                                    Java
+                                </p>
+                                <p>Java is my favourite language to develop in, which leads me to be very proficient in the language.</p>
+                            </span>
+                        </div>
+                        <div class="bottom"></div>-->
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script>
+            function toggleHyperlinks() 
+            {
+                var x = document.getElementById("hyperlinks");
+                if (x.style.display === "none") 
+                {
+                    x.style.display = "block";
+                } else 
+                {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
