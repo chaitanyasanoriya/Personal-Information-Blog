@@ -557,13 +557,19 @@ html, body
 
     .slide_links
     {
-        position: fixed;
-        bottom: 15%;
-        right: 5%;
+        margin-top: 50vh;
+        text-align: right;
         z-index: 999;
     }
 
-    .slide_links a
+    .slide_links_videos
+    {
+        margin-top: 18vh;
+        text-align: right;
+        z-index: 999;
+    }
+
+    .slide_links a, .slide_links_videos a
     {
         border: 0.05em solid black;
         padding: 1em;
@@ -572,15 +578,42 @@ html, body
         font-size: 1em;
     }
 
-    .slide_links a:hover
+    .slide_links a:hover, .slide_links_videos a:hover
     {
         color: grey;
         font-size: 1.05em;
         border: 0.05 solid grey;
     }
 
-    .fp-controlArrow.fp-prev {
-        left: 0;
+    #photography p
+    {
+        color: white;
+    }
+
+    .slide_links_photography
+    {
+        margin-top: 70vh;
+        text-align: right;
+        z-index: 999;
+    }
+
+    .slide_links_photography a
+    {
+        border: 0.05em solid white;
+        padding: 1em;
+        color: white;
+        border-radius: 0.5em;
+        font-size: 1em;
+    }
+
+    .slide_links_photography a:hover
+    {
+        font-weight: bold;
+    }
+
+    #programming .fp-controlArrow.fp-prev, #youtubing .fp-controlArrow.fp-prev 
+    {
+        left: 5%;
         border: none;
         width: 50px;
         height: 101px;
@@ -588,8 +621,10 @@ html, body
         cursor: pointer;
         background-size: 50px 101px;
     }
-    .fp-controlArrow.fp-next {
-        right: 0;
+
+    #programming .fp-controlArrow.fp-next, #youtubing .fp-controlArrow.fp-next
+    {
+        right: 5%;
         border: none;
         width: 50px;
         height: 101px;
@@ -597,6 +632,31 @@ html, body
         cursor: pointer;
         background-size: 50px 101px;
         /* background-size: 10px; */
+    }
+
+    #photography_section .fp-controlArrow.fp-prev
+    {
+        left: 5%;
+    }
+
+    #photography_section .fp-controlArrow.fp-next
+    {
+        right: 5%;
+    }
+
+    .interest_main
+    {
+        padding: 0;
+    }
+
+    #programming, #youtubing, #photography
+    {
+        padding: 5%;
+    }
+
+    #photography_section
+    {
+        background-color: black;
     }
 
   }
