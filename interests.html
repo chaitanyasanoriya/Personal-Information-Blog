@@ -11,6 +11,7 @@
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -66,11 +67,66 @@
                         </div>
                     </div>
                     <div class="desktop">
-
+                        <div id="fullpage">
+                            <div class="section">
+                                <div class="slide">
+                                    <div class="slide_holder">
+                                        <p class="slide_title">Programming</p>
+                                        <div class="slide_content">
+                                            <p class="content_title">
+                                                Cute Algorithm (File Encryption Software)
+                                            </p>
+                                            <p>
+                                                Cute Algorithm is a JavaFX based file encryption software with our own developed symmetric encryption algorithm. 
+                                                The algorithm was named Cute Algorithm as it works on combination of simple manipulations which together makes the 
+                                                algorithm becomes very secure. The encryption algorithm is very efficient and very secure. The core encryption logic 
+                                                is unique and developed by our team independently. The core logic only takes help of a external Caesar Cipher to give 
+                                                the encryption an extra layer of security. The algorithm is able to encrypt files up to 4GBs successfully. The Software 
+                                                has a beautiful minimalist layout and is designed with latest trend in mind.
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="slide_holder">
+                                        <p class="slide_title">Programming</p>
+                                        <div class="slide_content">
+                                            <p class="content_title">
+                                                Food Inspector
+                                            </p>
+                                            <p>
+                                                Food Inspector is an Android based application which has a Java Servlet based back end . The application is scans a fruit 
+                                                and lets the user know about the freshness of a fruit. The application is an online based application which sends the 
+                                                image to the Java Servlet back end running on our custom server which runs a tensor flow based Machine Learning model and 
+                                                returns the most likely result according to the model, upon the return of the result the Java Servlet also updates the 
+                                                Oracle Database saving the history and result of the scans for unique device IDs which is running on a separate server. 
+                                                The application is made on latest trend of minimalist UI and looks up to par with the latest trends.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide_links">
+                                    <a href="https://github.com/chetu97">View Github</a>&emsp;
+                                    <a href="https://www.hackerrank.com/chaitanya_sanor1?hr_r=1">View HackerRank</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" ></script>
+        <script>
+            new fullpage('#fullpage',
+            {
+                scrollingeSpeed: 1000,
+	            navigation:true,
+                verticalCentered:false,
+                autoScrolling:true,
+	            scrollHorizontally: true
+            });
+        </script>
         <script>
             function toggleHyperlinks() 
             {

@@ -456,7 +456,7 @@ html, body
         max-width: 100%;
     }
 
-    .college > .section_title
+    /* .college > .section_title
     {
         font-size: 4em;
     }
@@ -464,12 +464,12 @@ html, body
     .college > .section_sub
     {
         font-size: 2.25em;
-    }
+    } */
 
     .section_title
     {
         padding-left: 0.5em;
-        font-size: 5em;
+        font-size: 3em;
         font-weight: bold;
         max-width: 12em;
         margin: 0;
@@ -479,7 +479,7 @@ html, body
     {
         margin: 0;
         padding-left: 1em;
-        font-size: 3em;
+        font-size: 2em;
         max-width: 20em;
         clear: left;
     }
@@ -532,4 +532,71 @@ html, body
         display: inline-block;
         width: 80%;
     }
+
+    .slide_title
+    {
+        float: left;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .slide_content
+    {
+        clear: left;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2%;
+        font-size: 1.25em;
+    }
+
+    .content_title
+    {
+        font-size: 1.5em;
+    }
+
+    .slide_links
+    {
+        position: fixed;
+        bottom: 15%;
+        right: 5%;
+        z-index: 999;
+    }
+
+    .slide_links a
+    {
+        border: 0.05em solid black;
+        padding: 1em;
+        color: black;
+        border-radius: 0.5em;
+        font-size: 1em;
+    }
+
+    .slide_links a:hover
+    {
+        color: grey;
+        font-size: 1.05em;
+        border: 0.05 solid grey;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 0;
+        border: none;
+        width: 50px;
+        height: 101px;
+        background: url('../images/left.png') no-repeat;
+        cursor: pointer;
+        background-size: 50px 101px;
+    }
+    .fp-controlArrow.fp-next {
+        right: 0;
+        border: none;
+        width: 50px;
+        height: 101px;
+        background: url('../images/right.png') no-repeat;
+        cursor: pointer;
+        background-size: 50px 101px;
+        /* background-size: 10px; */
+    }
+
   }
