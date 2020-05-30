@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body onload="checkOrientaion()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -67,7 +67,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="desktop">
+                    <div id="desktop" class="desktop">
                         <div id="fullpage">
                             <div class="section" id="programming">
                                 <div class="slide">
@@ -331,14 +331,14 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" ></script>
         <script>
-            new fullpage('#fullpage',
-            {
-                scrollingeSpeed: 1000,
-	            navigation:true,
-                verticalCentered:false,
-                autoScrolling:true,
-	            scrollHorizontally: true
-            });
+            // new fullpage('#fullpage',
+            // {
+            //     scrollingeSpeed: 1000,
+	        //     navigation:true,
+            //     verticalCentered:false,
+            //     autoScrolling:true,
+	        //     scrollHorizontally: true
+            // });
         </script>
         <script>
             function toggleHyperlinks() 
@@ -352,6 +352,51 @@
                     x.style.display = "none";
                 }
             }
+
+            // window.onload = function()
+            // {
+            //     if(window.innerHeight > window.innerWidth)
+            //     {
+            //         new fullpage('#fullpage',
+            //         {
+            //             scrollingeSpeed: 1000,
+            //             navigation:true,
+            //             verticalCentered:false,
+            //             autoScrolling:true,
+            //             scrollHorizontally: true
+            //         });
+            //     }
+            // }
+
+            function checkOrientaion()
+            {
+                if(window.innerWidth > window.innerHeight)
+                {
+                    new fullpage('#fullpage',
+                    {
+                        scrollingeSpeed: 1000,
+                        navigation:true,
+                        verticalCentered:false,
+                        autoScrolling:true,
+                        scrollHorizontally: true
+                    });
+                }
+            }
+
+            window.addEventListener("orientationchange", function() {
+                //alert(window.orientation);
+                if(window.orientation == 90)
+                {
+                    new fullpage('#fullpage',
+                    {
+                        scrollingeSpeed: 1000,
+                        navigation:true,
+                        verticalCentered:false,
+                        autoScrolling:true,
+                        scrollHorizontally: true
+                    });
+                }
+            }, false);
         </script>
     </body>
 </html>
